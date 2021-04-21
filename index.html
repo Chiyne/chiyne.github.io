@@ -10,28 +10,28 @@
   <body>
 	<header class="header">
 		<div class="container header__container">
-			<a class="header__link header__email" href="mailto:s.chiyne@mail.ru">s.chiyne@mail.ru</a>
-			<a class="header__link header__phone" href="tel:+79137456612">+7-913-745-66-12</a>
+			<a class="link email" href="mailto:s.chiyne@mail.ru">s.chiyne@mail.ru</a>
+			<a class="link phone" href="tel:+79137456612">+7-913-745-66-12</a>
 		</div>
 	</header>
 
 	<section class="hero">
 		<div class="container hero__container">
-			<h1 class="heading">Сарыбашева Чийне</h1>
 			<p class="caption hero__caption">Junior верстальщик</p>
+			<h1 class="heading">Сарыбашева Чийне</h1>
 		</div>
 	</section>
 
 	<section class="intro">
 		<div class="container intro__container">
 			<h2 class="subheading">Давайте познакомимся</h2>
-			<figure class="figure">
-				<img class="user-image" src="files/user.jpg" alt="Фотография Неопознанного Енота">
+			<figure class="intro__figure">
+				<img class="intro__image" src="files/user.jpg" alt="Фотография Неопознанного Енота">
 			</figure>
 			<table class="content intro__content table">
 				<tr class="table__row">
 					<td class="table__col">ФИО:</td>
-					<td class="table__col">Сарыбашева Чийне Эркеменовна</td>
+					<td class="table__col">Сарыбашева Чийне <span class="opacity">[ Чийнэ&#x301 ]</span> Эркеменовна</td>
 				</tr>
 				<tr class="table__row">
 					<td class="table__col">Возраст:</td>
@@ -50,11 +50,16 @@
 					<td class="table__col">Русский, Английский(pre-intermediate), Алтайский(родной)</td>
 				</tr>
 				<tr class="table__row">
+					<td class="table__col">Опыт работы:</td>
+					<td class="table__col">Инженер-разработчик СВЧ приёмопередатчиков в АО "НИИЭП" с 2015г по н.в. </td>
+				</tr>
+
+				<tr class="table__row">
 					<td class="table__col">О себе:</td>
 					<td class="table__col">
 						<dl>
-							<dt>Практикую тайм-менеджмент "<span class="highlighted">Помодоро</span>"</dt>
-							<dt>Нормальный человек</dt>
+							<dt><span class="highlighted">Нормальный</span>, адекватный, порядочный <span class="highlighted">человек</span> с позитивным взглядом на мир, которому присущи: ответственность, пунктуальность, коммуникабельность, неконфликтность, самокритичность и педантичность.</dt>
+							<dt>Практикую тайм-менеджмент "<span class="highlighted">Помодоро</span>".</dt>
 						</dl>
 					</td>
 				</tr>
@@ -88,6 +93,12 @@
 						</figure>
 					</td>
 				</tr>
+				<tr class="table__row">
+					<td class="table__col"></td>
+					<td class="table__col table__button">
+						<a class="button" href="files/резюме.doc" download>Скачать резюме</a>
+					</td>
+				</tr>
 			</table>
 		</div>
 	</section>
@@ -100,10 +111,10 @@
 					<figure class="project__figure">
 						<img class="project__image" src="files/scandi.jpg"  alt="Cайт дизайн студии домашнего интерьера. Desktop-версия">
 					</figure>
-					<div class="content">
-						<h3 class="title">Сайт дизайн-студии домашнего интерьера</h3>
+					<div class="content project__content">
+						<h3 class="subheading-2">Сайт дизайн-студии домашнего интерьера</h3>
 						<p>Адаптивная, резиновая, кроссбраузерная верстка по БЭМ на флексах и гридах.  Реализованы: ховер-эффект в виде маски с текстом на изображениях в галерее; плавная прокрутка при навигации внутри страницы; кнопка прокрутки в начало страницы. Валидация пройдена без ошибок и предупреждений.</p>
-						<div class="buttons">
+						<div class="project__buttons">
 							<a class="button" href="https://chiyne.github.io/scandi/">Открыть страницу</a>
 							<a class="button" href="https://github.com/Chiyne/scandi">Открыть репозиторий</a>
 						</div>
@@ -113,10 +124,10 @@
 					<figure class="project__figure">
 						<img class="project__image" src="files/restaurant.jpg"  alt="Cайт дизайн студии домашнего интерьера">
 					</figure>
-					<div class="content">
-						<h3 class="title">Сайт ресторана</h3>
+					<div class="content project__content">
+						<h3 class="subheading-2">Сайт ресторана</h3>
 						<p>Адаптивная, резиновая, кроссбраузерная верстка по БЭМ на флексах и гридах.  Реализованы: плавная прокрутка при навигации внутри страницы; кнопка прокрутки в начало страницы; подключены фавиконка и интерактивная карта. Валидация пройдена без ошибок и предупреждений.</p>
-						<div class="buttons">
+						<div class="project__buttons">
 							<a class="button" href="https://chiyne.github.io/restaurant/">Открыть страницу</a>
 							<a class="button" href="https://github.com/Chiyne/restaurant">Открыть репозиторий</a>
 						</div>
@@ -128,8 +139,8 @@
 
 	<footer class="footer">
 		<div class="container footer__container">
-			<a class="footer__link footer__link_email" href="mailto:s.chiyne@mail.ru">s.chiyne@mail.ru</a>
-			<a class="footer__link footer__link_phone" href="tel:+79137456612">+7-913-745-66-12</a>
+			<a class="link email" href="mailto:s.chiyne@mail.ru">s.chiyne@mail.ru</a>
+			<a class="link phone" href="tel:+79137456612">+7-913-745-66-12</a>
 		</div>
 	</footer>
   </body>
