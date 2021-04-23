@@ -1,7 +1,7 @@
 body
 	font-family: "Montserrat", "Helvetica", "Arial", sans-serif
-	font-size: 16px
-	line-height: 32px
+	font-size: clamp(14px, 4vw, 16px)
+	line-height: 1.5em
 	color: $var1
 	background-color: $var2
 	background-image: url("../img/pattern-lines-hero.svg")
@@ -15,17 +15,34 @@ img
 	flex-wrap: wrap
 	width: 100%
 	max-width: 1560px
-	padding: 50px 80px
+	padding: clamp(2rem, 10vmin, 10rem) clamp(10px, 8vmin, 10rem)
 	margin: 0 auto
+
+.heading
+	font-size: clamp(36px, 10vw, 96px)
+	line-height: 1.5em
+	font-weight: 500
+	margin-bottom: 16px
+
+.subheading
+	margin-bottom: 5vh
+	font-size: clamp(28px, 9vw, 62px)
+	line-height: 1.5em
+	font-weight: 500
+	text-align: center
+	padding: 0 10px
+	color: $var3
 
 .subheading-2
 	margin-bottom: 12px
-	font-size: 32px
+	font-size: clamp(16px, 7vw, 32px)
 	line-height: 40px
 	font-weight: 500
+.nowrap
+	white-space: nowrap
 .link
 	position: relative
-	margin-right: 64px
+	margin-right: clamp(1px, 5vw, 64px)
 	padding-bottom: 10px
 	padding-top: 9px
 	font-weight: 500
@@ -75,13 +92,19 @@ img
 	&::before
 		position: absolute
 		content: ""
-		top: 55px
-		left: calc(50vw - 32px)
-		width: 800px
-		height: 800px
+		top: 100px
+		right: 0
+		width: 700px
+		height: 700px
 		background-image: url("../img/hero-image.svg")
 		background-repeat: no-repeat
 		z-index: -2
+		@media screen and ( max-width: 992px )
+			width: 500px
+			height: 500px
+		@media screen and ( max-width: 600px )
+			width: 300px
+			height: 300px
 	&::after
 		position: absolute
 		content: ""
@@ -94,58 +117,49 @@ img
 		background-repeat: no-repeat
 		border-top: 2px solid $var8
 		z-index: -1
+		@media screen and ( max-width: 600px )
+			height: 150px
 	&__container
 		flex-direction: column
 		justify-content: center
 		height: 100vh
 	&__caption
-		font-size: 32px
-		line-height: 48px
+		font-size: clamp(26px, 8vw, 32px)
+		line-height: 1.5em
 		padding-bottom: 16px
 		color: $var3
 
-.heading
-	max-width: 815px
-	font-size: 96px
-	line-height: 112px
-	font-weight: 500
-	margin-bottom: 16px
+.intro, .portfolio
+	background: $var2 url("../img/pattern-lines.svg") repeat-y center
 
-.intro,
-.portfolio
-	background-color: $var2
-	background-image: url("../img/pattern-lines.svg")
-	background-repeat: repeat-y
-	background-position-x: center
-
-.subheading
-	margin-bottom: 56px
-	font-size: 72px
-	line-height: 88px
-	font-weight: 500
-	text-align: center
-	color: $var3
-
+.figure
+	flex: 1 1 30%
+	padding: 0 10px
 
 .content
-	width: 70%
-	padding-left: 25px
+	flex: 1 1 70%
+	padding: 0 10px
 
+.buttons
+	width: 100%
+	padding: 0 10px
+	text-align: right
 .intro
-	.subheading
+	&__container
+		justify-content: center
+	&__subheading
 		width: 100%
+		padding: 0 10px
 	&__figure
-		width: 30%
+		max-width: 450px
+		min-width: 255px
 	&__image
 		border-radius: 50%
 
 .table
 	&__col
 		vertical-align: top
-		padding-left: 5px
-	&__button
-		text-align: right
-		padding-top: 40px
+		padding: 3px 0 3px 5px
 .skills
 	display: flex
 	justify-content: space-between
@@ -153,6 +167,7 @@ img
 	padding-top: 10px
 	&__item
 		text-align: center
+		margin: 0 auto
 	&__icon
 		height: 3.5rem
 
@@ -161,25 +176,36 @@ img
 
 .project
 	display: flex
+	flex-wrap: wrap
+	justify-content: center
 	align-items: stretch
 	margin-bottom: 80px
 	&__figure
 		flex-basis: 50%
+		max-width: 80%
+		min-width: 406px
+		@media screen and ( max-width:  600px)
+			min-width: 255px
+			max-width: 100%
+			padding: 0
+
 	&__content
+		flex-basis: 50%
 		display: flex
 		flex-direction: column
 	&__buttons
-		text-align: right
 		margin-top: auto
+	&__icon
+		height: 3.5rem
 .opacity
 	opacity: 0.4
 
 .button
-	margin: 0
+	margin-top: 15px
 	padding: 8px 24px
 	display: inline-block
 	vertical-align: baseline
-	font-size: 14px
+	font-size: clamp(11px, 3vw, 14px)
 	font-weight: 500
 	letter-spacing: 1px
 	text-decoration: none
@@ -203,3 +229,9 @@ img
 		padding-top: 20px
 		padding-bottom: 20px
 
+.white
+	position: fixed
+	bottom: 0
+	width: 100%
+	height: 50px
+	background-color: #ffffff

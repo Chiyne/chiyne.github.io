@@ -2,6 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.min.css">
 		<title>Портфолио Junior верстальщика</title>
@@ -18,20 +19,20 @@
 	<section class="hero">
 		<div class="container hero__container">
 			<p class="caption hero__caption">Junior верстальщик</p>
-			<h1 class="heading">Сарыбашева Чийне</h1>
+			<h1 class="heading">Сарыбашева <br> Чийне</h1>
 		</div>
 	</section>
 
 	<section class="intro">
 		<div class="container intro__container">
-			<h2 class="subheading">Давайте познакомимся</h2>
-			<figure class="intro__figure">
+			<h2 class="subheading intro__subheading">Давайте познакомимся</h2>
+			<figure class="figure intro__figure">
 				<img class="intro__image" src="files/user.jpg" alt="Фотография Неопознанного Енота">
 			</figure>
 			<table class="content intro__content table">
 				<tr class="table__row">
 					<td class="table__col">ФИО:</td>
-					<td class="table__col">Сарыбашева Чийне <span class="opacity">[ Чийнэ&#x301 ]</span> Эркеменовна</td>
+					<td class="table__col">Сарыбашева Чийне <span class="opacity nowrap">[ Чийнэ&#x301 ]</span> Эркеменовна</td>
 				</tr>
 				<tr class="table__row">
 					<td class="table__col">Возраст:</td>
@@ -93,13 +94,10 @@
 						</figure>
 					</td>
 				</tr>
-				<tr class="table__row">
-					<td class="table__col"></td>
-					<td class="table__col table__button">
-						<a class="button" href="files/резюме.doc" download>Скачать резюме</a>
-					</td>
-				</tr>
 			</table>
+			<div class="buttons intro__buttons">
+				<a class="button" href="files/резюме.doc" download>Скачать резюме</a>
+			</div>
 		</div>
 	</section>
 
@@ -108,28 +106,28 @@
 			<h2 class="subheading">Мои работы</h2>
 			<ul class="projects">
 				<li class="project">
-					<figure class="project__figure">
+					<figure class="figure project__figure">
 						<img class="project__image" src="files/scandi.jpg"  alt="Cайт дизайн студии домашнего интерьера. Desktop-версия">
 					</figure>
 					<div class="content project__content">
-						<h3 class="subheading-2">Сайт дизайн-студии домашнего интерьера</h3>
-						<p>Адаптивная, резиновая, кроссбраузерная верстка по БЭМ на флексах и гридах.  Реализованы: ховер-эффект в виде маски с текстом на изображениях в галерее; плавная прокрутка при навигации внутри страницы; кнопка прокрутки в начало страницы. Валидация пройдена без ошибок и предупреждений.</p>
-						<div class="project__buttons">
-							<a class="button" href="https://chiyne.github.io/scandi/">Открыть страницу</a>
+						<h3 class="subheading-2">Сайт <span class="nowrap">дизайн-студии</span> домашнего интерьера</h3>
+						<p class="project__description">Адаптивная, резиновая, кроссбраузерная верстка по БЭМ на флексах и гридах.  Реализованы: ховер-эффект в виде маски с текстом на изображениях в галерее; плавная прокрутка при навигации внутри страницы; кнопка прокрутки в начало страницы. Валидация пройдена без ошибок и предупреждений.</p>
+						<div class="buttons project__buttons">
 							<a class="button" href="https://github.com/Chiyne/scandi">Открыть репозиторий</a>
+							<a class="button" href="https://chiyne.github.io/scandi/">Открыть страницу</a>
 						</div>
 					</div>
 				</li>
 				<li class="project">
-					<figure class="project__figure">
+					<figure class="figure project__figure">
 						<img class="project__image" src="files/restaurant.jpg"  alt="Cайт дизайн студии домашнего интерьера">
 					</figure>
 					<div class="content project__content">
 						<h3 class="subheading-2">Сайт ресторана</h3>
-						<p>Адаптивная, резиновая, кроссбраузерная верстка по БЭМ на флексах и гридах.  Реализованы: плавная прокрутка при навигации внутри страницы; кнопка прокрутки в начало страницы; подключены фавиконка и интерактивная карта. Валидация пройдена без ошибок и предупреждений.</p>
-						<div class="project__buttons">
-							<a class="button" href="https://chiyne.github.io/restaurant/">Открыть страницу</a>
+						<p class="project__description">Адаптивная, резиновая, кроссбраузерная верстка по БЭМ на флексах и гридах.  Реализованы: плавная прокрутка при навигации внутри страницы; кнопка прокрутки в начало страницы; подключены фавиконка и интерактивная карта. Валидация пройдена без ошибок и предупреждений.</p>
+						<div class="buttons project__buttons">
 							<a class="button" href="https://github.com/Chiyne/restaurant">Открыть репозиторий</a>
+							<a class="button" href="https://chiyne.github.io/restaurant/">Открыть страницу</a>
 						</div>
 					</div>
 				</li>
@@ -143,5 +141,6 @@
 			<a class="link phone" href="tel:+79137456612">+7-913-745-66-12</a>
 		</div>
 	</footer>
+	<div class="white"></div>
   </body>
 </html>
